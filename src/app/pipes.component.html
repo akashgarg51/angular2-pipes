@@ -4,4 +4,8 @@
   <p>{{myValue | uppercase}}</p>
   <p>{{myDate | date:"MM/dd/yy"}}</p>
   <p>{{myValue | slice:3:7 | uppercase}}</p>
+  <hr>
+  <h2> Custom Type</h2>
+  <input type="text" #input (keyup)="0"> <!-- This is a dummy event just to update the UI -->
+  <p>{{input.value  | double}}</p>
 </div>
