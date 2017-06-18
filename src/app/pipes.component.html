@@ -8,4 +8,7 @@
   <h2> Custom Type</h2>
   <input type="text" #input (keyup)="0"> <!-- This is a dummy event just to update the UI -->
   <p>{{input.value  | double}}</p>
+  <ul>
+    <li *ngFor="let item of values | filter:'ea'">{{item}}</li>
+  </ul>
 </div>
